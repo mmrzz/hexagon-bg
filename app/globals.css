@@ -32,12 +32,9 @@ body {
 		hsl(303, 100%, 50%)
 	);
 }
-/* .hexagon {
-	transform: rotateX(180deg) scale(0.7);
-	-webkit-filter: drop-shadow(0 0 20px rgba(212, 55, 147, 0.7));
-	filter: drop-shadow(0 0 25px rgba(212, 55, 147, 0.7));
-} */
-
-/* .hexagon-not-hover {
-	transition: transform 1s ease-out 0.3s;
-} */
+polygon {
+	fill: url("#grad");
+}
+svg {
+	color: hsl(0, 0%, 13%);
+}

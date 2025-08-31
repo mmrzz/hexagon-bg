@@ -1,21 +1,21 @@
 export default function Home() {
 	return (
 		<main className='flex m-0 flex-col text-lg items-center mt-[30vh] min-h-screen pointer-events-none'>
-			<div className='w-full max-w-[75%] bg-amber-50/90 p-8 rounded-t-4xl shadow-md '>
-				<h1 className='text-4xl font-bold mb-4'>
+			<div className='w-full max-w-[75%] bg-amber-50/90 p-8 rounded-t-4xl shadow-md dark:bg-slate-600/90 '>
+				<h1 className='text-4xl font-bold mb-4 text-black dark:text-amber-50'>
 					Welcome to Our Hexagon Background Page
 				</h1>
-				<p className='text-black mb-2'>
+				<p className=' mb-2'>
 					This page demonstrates how we built a dynamic, full-page
 					background using React and SVG.
 				</p>
-				<p className='text-black mb-2'>
+				<p className=' mb-2'>
 					Each hexagon is a separate React component, absolutely
 					positioned to form a honeycomb pattern. The layout
 					automatically fills the screen on any device and allows
 					smooth hover interactions for each individual hexagon.
 				</p>
-				<p className='text-black'>
+				<p className=''>
 					TailwindCSS is used for styling, and we leverage fixed
 					positioning and z-index to place the hexagons behind the
 					main content. Transitions make hover effects feel responsive
@@ -24,7 +24,7 @@ export default function Home() {
 				<button className='bg-black text-amber-50 rounded-xl p-3 my-2 pointer-events-auto hover:bg-slate-800'>
 					experimental button
 				</button>
-				<h2 className='opacity-100 text-black text-3xl'>
+				<h2 className='opacity-100  text-3xl'>
 					demonstration of scroll effect
 				</h2>
 				<section id='not-readable' className='opacity-50'>

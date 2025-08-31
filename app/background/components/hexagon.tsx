@@ -7,7 +7,7 @@ type props = {
 };
 
 function Hexagon({ row, col }: props) {
-	const [hovered, setHovered] = useState(true);
+	const [hovered, setHovered] = useState(false);
 	const size = 60;
 
 	const radius = size / 2;
@@ -20,10 +20,6 @@ function Hexagon({ row, col }: props) {
 		//0.866 is cos(30) and it's here so the hexagon starts at the top and not be just in the middle
 		points.push(`${x},${y}`);
 	}
-	useEffect(() => {
-		// setTimeout(() => setHovered(true), 1000);
-		setTimeout(() => setHovered(false), 2000);
-	}, []);
 
 	const handleMouseEnter = () => {
 		setHovered(true);
@@ -50,6 +46,12 @@ function Hexagon({ row, col }: props) {
 			style={style}>
 			{" "}
 			{/*  again 0.866 makes it fit the hexagon */}
+			<defs>
+				<linearGradient id='grad'>
+					<stop offset='0' stopColor='#333' />
+					<stop offset='1' stopColor='#000' />
+				</linearGradient>
+			</defs>
 			<polygon points={points.join(" ")} fill='currentColor' />
 		</svg>
 	);
